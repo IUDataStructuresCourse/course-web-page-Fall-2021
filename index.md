@@ -17,21 +17,25 @@ challenging problems in bioinformatics and geographic information
 systems. Warning: a possible side-effect of taking this course is
 doing better on job interview questions.
 
-**Lecture:** Mondays and Wednesdays 1:10pm-2:25pm, Student Building, Room 138.
+**Lecture** 
 
-**Lab:** Fridays 10:00am-11:55am, Ballantine Hall 118.
+Mondays and Wednesdays 1:10pm-2:25pm, Student Building, Room 138.
 
-**Instructors:**
+**Lab** 
+
+Fridays 10:00am-11:55am, Ballantine Hall 118.
+
+**Instructors**
 
 * Jeremy Siek (jsiek)
 * Annie Pompa (apompa)
 * Sophia Zhang (zhanso)
 
-**Textbook:**
+**Textbook**
 
 *Data Structures and Algorithm Analysis in Java*, 3rd Ed. by Mark A. Weiss
 
-**Slack: (communicating with instructors and other students)**
+**Slack (communicating with instructors and other students)**
 
 [Workspace](https://h343datastruc-yln1475.slack.com)
  ([signup](https://join.slack.com/t/indiana-izt3285/shared_invite/zt-ucnml3au-jps1wf8czRc0iNM_1khQ5g))
@@ -49,6 +53,13 @@ Sep. 6  | Labor Day             |                |
 Sep. 8  | Linked Lists          | Ch. 3 sec. 1-5 |
 Sep. 10 |                       |                | Lab: Merge Sort
 
+**Resources**
+
+* (Autograder)[https://autograder.sice.indiana.edu/web/course/25] for
+  submitting coding assignments.
+
+* Code Editor and Debugger: 
+  [IntelliJ IDEA](https://www.jetbrains.com/idea/download) (Community Edition)
 
 **COVID Policies and Precautions**
 

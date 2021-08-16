@@ -1,37 +1,33 @@
-## Welcome to GitHub Pages
+## CSCI H343 Data Structures
 
-You can use the [editor on GitHub](https://github.com/IUDataStructuresCourse/course-web-page-Fall-2021/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Indiana University, Fall 2021
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+This course studies the fundamental ideas for efficiently analyzing
+large amounts of data, such as DNA sequence databases and geographic
+information. These fundamental ideas come in two kinds: algorithms and
+data structures. Algorithms are instructions for solving problems and
+data structures are strategies for organizing information on
+computers. Efficient algorithms require appropriate data structures,
+and vice versa, so the study of algorithms and data structures is
+tightly linked. In this course we learn about the algorithms and data
+structures that form the building blocks for most of Today's
+large-scale computer systems. We apply these ideas to solve
+challenging problems in bioinformatics and geographic information
+systems. Warning: a possible side-effect of taking this course is
+doing better on job interview questions.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+**Lecture:** Mondays and Wednesdays 1:10pm-2:25pm, Student Building, Room 138.
 
-```markdown
-Syntax highlighted code block
+**Lab:** Fridays 10:00am-11:55am, Ballantine Hall 118.
 
-# Header 1
-## Header 2
-### Header 3
+**Instructors:**
 
-- Bulleted
-- List
+* Jeremy Siek (jsiek)
+* Annie Pompa (apompa)
+* Sophia Zhang (zhanso)
 
-1. Numbered
-2. List
+**Textbook:**
 
-**Bold** and _Italic_ and `Code` text
+Data Structures and Algorithm Analysis in Java, 3rd Ed. by Mark A. Weiss
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/IUDataStructuresCourse/course-web-page-Fall-2021/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.

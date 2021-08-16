@@ -55,7 +55,7 @@ Sep. 10 |                       |                | Lab: Merge Sort
 
 **Resources**
 
-* (Autograder)[https://autograder.sice.indiana.edu/web/course/25] for
+* [Autograder](https://autograder.sice.indiana.edu/web/course/25) for
   submitting coding assignments.
 
 * Code Editor and Debugger: 

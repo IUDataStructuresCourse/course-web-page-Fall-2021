@@ -29,7 +29,7 @@ doing better on job interview questions.
 
 **Textbook:**
 
-Data Structures and Algorithm Analysis in Java, 3rd Ed. by Mark A. Weiss
+*Data Structures and Algorithm Analysis in Java*, 3rd Ed. by Mark A. Weiss
 
 **Slack: (communicating with instructors and other students)**
 

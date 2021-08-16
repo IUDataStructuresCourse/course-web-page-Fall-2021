@@ -41,7 +41,7 @@ doing better on job interview questions.
 Day     | Lecture Topic         | Reading Due    | Assignment Due
 Aug. 23 | Introduction          |                |
 Aug. 25 | Rotating Arrays       | Ch. 1          | 
-Aug. 27 |                       |                | Lab: Rotate
+Aug. 27 |                       |                | Lab: Array Search
 Aug. 30 | Algorithm Analysis    | Ch. 2          |
 Sep. 1  | Algo. Analysis cont'd |                |
 Sep. 3  |                       |                | Project: Flood it!

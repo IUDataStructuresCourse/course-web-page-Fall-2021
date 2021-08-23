@@ -61,6 +61,14 @@ Sep. 10 |                       |                | Lab: Merge Sort
 * Code Editor and Debugger: 
   [IntelliJ IDEA](https://www.jetbrains.com/idea/download) (Community Edition)
 
+**Grade Weighting**
+
+* Assignments (30%)
+* Quizzes (10%)
+* Midterm Exam (25%)
+* Final Exam (35%)
+
+
 **COVID Policies and Precautions**
 
 All students signed the Community Responsibility Acknowledgement

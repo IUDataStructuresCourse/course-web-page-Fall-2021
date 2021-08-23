@@ -113,23 +113,29 @@ We want the subarray with the largest sum, that is, the
 
 Analysis of the time complexity:
 
- The crossing-subarray is linear, that is, c * m where m is the
- size of the subarray.
+The crossing-subarray is linear, that is, c * m where m is the
+size of the subarray.
 
- Recursion tree:
+Recursion tree:
 
-					c*n                     = c*n
-				/         \
-		   c*n/2          c*n/2             = c*n
-		  /    \          /    \     
-		c*n/4  c*n/4   c*n/4   c*n/4        = c*n
-		...
+                    c*n                     = c*n
+                /         \
+           c*n/2          c*n/2             = c*n
+          /    \          /    \
+        c*n/4  c*n/4   c*n/4   c*n/4        = c*n
+        ...
 
-- What's the height?
-  At the bottom, at a leaf, we have $n/2^h = 1$.
-  We want to solve for h, so we isolate the 2^h term on one side.
-	  n = 2^h
-  Then take the log of both sides:
-   log n = h      (recall that log (2^x) = x for any x)
+What's the height?
 
-- Total work is c*n * lg n, so the time complexity is O(n lg n)
+At the bottom, at a leaf, we have n/2^h = 1.
+We want to solve for h, so we isolate the 2^h term on one side.
+
+    n = 2^h
+	  
+Then take the log of both sides:
+
+    log n = h      (recall that log (2^x) = x for any x)
+
+Total work is c*n * lg n, so the time is roughly 
+
+    n lg n

@@ -74,7 +74,8 @@
 ## Lab 1: Linear and Binary Search
 
 ## Project 1: Flood It!
-    * Choose a team
+
+* Choose a team
 
 ## Appetizer: The Maximum Subsequence Problem
 
@@ -101,14 +102,14 @@ We want the subarray with the largest sum, that is, the
 	2. max-subarray is to the right of the cut
 	3. max-subarray crosses the cut
 
-			Cases 1&2 are the same problem but smaller -> recursion
-			Case 3 needs work:
-			* any crossing subarray is made of a left and right part that
-			  meet in the middle
-			* finding a max-subarray with one end held constant is easy:
-			  start at the constant end and keep growing the subarray toward
-			  the other end, keeping track of the max sum and index seen so
-			  far.
+		Cases 1&2 are the same problem but smaller -> recursion
+		Case 3 needs work:
+		* any crossing subarray is made of a left and right part that
+		  meet in the middle
+		* finding a max-subarray with one end held constant is easy:
+		  start at the constant end and keep growing the subarray toward
+		  the other end, keeping track of the max sum and index seen so
+		  far.
 
 Analysis of the time complexity:
 
@@ -117,15 +118,15 @@ Analysis of the time complexity:
 
  Recursion tree:
 
-						c*n                     = c*n
-					/         \
-			   c*n/2          c*n/2             = c*n
-			  /    \          /    \     
-			c*n/4  c*n/4   c*n/4   c*n/4        = c*n
-			...
+					c*n                     = c*n
+				/         \
+		   c*n/2          c*n/2             = c*n
+		  /    \          /    \     
+		c*n/4  c*n/4   c*n/4   c*n/4        = c*n
+		...
 
 - What's the height?
-  At the bottom, at a leaf, we have n/2^h = 1.
+  At the bottom, at a leaf, we have $n/2^h = 1$.
   We want to solve for h, so we isolate the 2^h term on one side.
 	  n = 2^h
   Then take the log of both sides:

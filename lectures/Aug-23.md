@@ -86,8 +86,9 @@ greatest net change in altitude. Show TecumsehMarathon.pdf.
 	change:   -25, -100, +100, -25,-75,-125,+100,+100,-25, +75,   -50, -100
 				0     1     2    3   4    5    6    7   8    9   10    11
 
-We want the subarray with the largest sum, that is, the
-"maximum-subarray" problem
+We want the contiguous subsequence with the largest sum.  This is also
+known as the [Maximum Subarray
+Problem](https://en.wikipedia.org/wiki/Maximum_subarray_problem).
 
 * Brute force: try every pair of locations
 

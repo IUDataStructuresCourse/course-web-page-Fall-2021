@@ -27,8 +27,8 @@ Fridays 10:00am-11:55am, Ballantine Hall 118.
 
 **Instructors**
 
-* Jeremy Siek (jsiek), office hours: Tue 1-2pm in Luddy 3014
-* Annie Pompa (apompa)
+* Jeremy Siek (jsiek), office hours: Tue 1-2pm, Wed 11am-noon, in Luddy 3014
+* Annie Pompa (apompa), office hours: Thu 5-6pm, Fri 3-4pm, in Luddy 3014
 * Sophia Zhang (zhanso)
 
 **Textbook**

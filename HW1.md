@@ -1,5 +1,7 @@
 # Homework 1
 
+Submit your homework solution on Canvas (as text file, pdf, etc.).
+
 ## Correctness of `find_first_true`
 
 Prove that your implementation of the `find_first_true` function is

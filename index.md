@@ -50,7 +50,7 @@ Aug. 30 | Algorithm Analysis    | Ch. 2          |
 Sep. 1  | Algo. Analysis cont'd |                |
 Sep. 3  |                       |                | Project: Flood it!
 Sep. 6  | Labor Day             |                |
-Sep. 8  | Linked Lists          | Ch. 3 sec. 1-5 |
+Sep. 8  | Linked Lists          | Ch. 3 sec. 1-5 | [Homework 1](./HW1.md)
 Sep. 10 |                       |                | Lab: Merge Sort
 
 **Resources**

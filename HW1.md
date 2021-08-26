@@ -8,8 +8,8 @@ the position of the first `true` element in the specified half-open
 interval. In other words, find the smallest index `i` such that `A[i]`
 is `true`, `begin <= i`, and `i < end`.  If there are no `true`
 elements in the interval, then `find_first_true` must return the `end`
-position of the interval.  State the loop invariant precisely and
-provide detailed reasons for why
+position of the interval.  As part of the proof, come with with a loop
+invariant, state it precisely, and provide detailed reasons for why
 
 1. the loop invariant is true before the loop begins,
 2. why the loop invariant is true at the end of a hypothetical

@@ -44,7 +44,7 @@ Fridays 10:00am-11:55am, Ballantine Hall 118.
 
 Day     | Lecture Topic         | Reading Due    | Assignment Due
 Aug. 23 | [Introduction](./lectures/Aug-23.md) |   |
-Aug. 25 | Rotating Arrays       | Ch. 1          | 
+Aug. 25 | [Arrays, Rotation, Correctness](./lectures/Aug-25.md) | Ch. 1 | 
 Aug. 27 |                       |                | Lab: Array [Search](https://iu.instructure.com/courses/1996307/assignments/12618347), [submit](https://autograder.sice.indiana.edu/web/project/321)
 Aug. 30 | Algorithm Analysis    | Ch. 2          |
 Sep. 1  | Algo. Analysis cont'd |                |

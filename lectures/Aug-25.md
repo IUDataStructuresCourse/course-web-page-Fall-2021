@@ -4,14 +4,14 @@
 
 Create an array of length `n`
 
-```java "create array"
+```
 int n = 10;
 int[] A = new int[n];
 ```
 
 Set the element at a given position:
 
-```java "set array"
+```
 A[0] = 0;
 A[1] = 1;
 A[2] = 4;
@@ -27,13 +27,13 @@ Now we have an array that looks like the following
 	
 Get the element at a given position:
 
-```java "get array"
+```
 assert A[2] == 4;
 ```
 
 Loop over all the elements of an array, front to back
 
-```java "for-loop over array"
+```
 int total = 0;
 for (int y : A) {
   total += y;
@@ -51,7 +51,7 @@ The interval [3, 7) of our example array is
 
 Loop over a half-open interval of the subarray:
 
-```java "sum of subarray"
+```
 static int sum(int[] A, int begin, int end) {
   int total = 0;
   for (int i = begin; i != end; ++i) {
@@ -61,30 +61,9 @@ static int sum(int[] A, int begin, int end) {
 }
 ```
 
-```java "sum of front and back"
+```
 assert total == sum(A, 0, 5) + sum(A, 5, 10);
 ```
-
-
-```java ArrayExample.java
-class ArrayExample {
-
-  <<<sum of subarray>>>
-
-  public static void main(String[] args) {
-    <<<create array>>>
-    <<<set array>>>
-    <<<get array>>>
-    <<<for-loop over array>>>
-	<<<sum of front and back>>>
-  }
-
-}
-```
-
-(compile and run with the following)
-
-    ~/bin/lmt lecture-notes.md ; javac ArrayExample.java ; java ArrayExample
 
 ## Rotate the elements of an array by 1 to the right, with wrap around.
 
@@ -257,7 +236,7 @@ Rotation is used in
 We'll focus on the swap-backwards algorithm, expressed below as a
 `while` loop.
 
-```java "Rotate by swapping backwards"
+```
 static void rotate_1_swap_bkwd(int[] A) {
 	if (A.length > 1) {
 		int i = A.length - 1;
@@ -280,7 +259,7 @@ array has zero or one element, then rotating it does not change the
 array. Otherwise, the last element becomes the first element and all
 the other elements are moved by one to the right.
 
-```java "Is the array rotated?"
+```
 static boolean is_rotated(int[] A_orig, int[] A_new) {
 	if (A_orig.length < 2) {
         return Arrays.equals(A_orig, A_new);
@@ -335,7 +314,7 @@ part of A is the rotated version of the back part of A_orig.
 
 We write down the loop invariant as another function:
 
-```java "Loop invariant for rotate"
+```
 static boolean loop_invariant_rotate_bkwd(int[] A_orig, int[] A, int i) {
     return is_rotated(copyOfRange(A_orig, i, A.length), 
                       copyOfRange(A, i, A.length))
@@ -362,7 +341,7 @@ write down arguments for 1, 2, and 3.
 
 ### Rotate with annotations 
 
-```java "rotate annotated with proof"
+```
 static void rotate_1_swap_bkwd_short_proof(int[] A) {
 	int[] A_orig = copyOf(A, A.length);
 	assert Arrays.equals(A_orig, A);

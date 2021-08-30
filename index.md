@@ -11,7 +11,7 @@ data structures are strategies for organizing information on
 computers. Efficient algorithms require appropriate data structures,
 and vice versa, so the study of algorithms and data structures is
 tightly linked. In this course we learn about the algorithms and data
-structures that form the building blocks for most of Today's
+structures that form the building blocks for many of Today's
 large-scale computer systems. We apply these ideas to solve
 challenging problems in bioinformatics and geographic information
 systems. Warning: a possible side-effect of taking this course is

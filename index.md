@@ -48,7 +48,7 @@ Aug. 25 | [Arrays, Rotation, Correctness](./lectures/Aug-25.md) | Ch. 1 |
 Aug. 27 |                       |                | Lab: Array [Search](https://iu.instructure.com/courses/1996307/assignments/12618347), [submit](https://autograder.sice.indiana.edu/web/project/321)
 Aug. 30 | [Code Review & Algorithm Analysis](./lectures/Aug-30.md) | Ch. 2 |
 Sep. 1  | Algo. Analysis cont'd |                |
-Sep. 3  |                       |                | Project: Flood it!
+Sep. 3  |                       |                | Project: [Flood it!](https://iu.instructure.com/courses/1996307/assignments/12641907), [submit](https://autograder.sice.indiana.edu/web/project/322)
 Sep. 6  | Labor Day             |                |
 Sep. 8  | Linked Lists          | Ch. 3 sec. 1-5 | [Homework 1](./HW1.md)
 Sep. 10 |                       |                | Lab: Merge Sort

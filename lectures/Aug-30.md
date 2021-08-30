@@ -218,7 +218,7 @@ ignoring details that don't matter.
 
 Functions to think about: n, 10n, lg n, n lg n, 10 n², n² + n
 
-## Asympotitic Upper Bound
+## Asymptotic Upper Bound
 
 **Definition** (Big-O) For a given function g, we define **O(g)** as the
 the set of functions that grow similarly or slower than g. More

@@ -228,7 +228,7 @@ We say that g(n) is an *asymptotic upper bound* of all the functions
 in the set O(g).
 
 **Notation** We write f ≲ g iff f ∈ O(g), and say that f is
-asympototically less-or-equal to g.
+asymptotically less-or-equal to g.
 
 Demonstrate the main idea and the role of k and c.
 

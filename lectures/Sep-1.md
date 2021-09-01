@@ -14,6 +14,12 @@
 >
 > -- Tao of Programming
 
+Review of Big-O:
+
+**Definition** (Big-O)  f ∈ O(g) iff ∃ k c. ∀ n ≥ k. f(n) ≤ c g(n).
+
+**Notation** (asympototically less-or-equal) f ≲ g iff f ∈ O(g)
+
 **Example** 4x versus x²
 
 1. Is 4x ≲ x²?

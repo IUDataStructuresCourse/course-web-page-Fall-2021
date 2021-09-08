@@ -144,16 +144,17 @@ We can then implement the list and array functions using the stream version.
     }
 
 Looking under the hood, `map` could be implemented as follows in terms
-of the Stream operations `findFirst()`, `skip(1)`, `concat`, and `of`.
+of the Stream operations `skip(1)`, `concat`, and `of`, and some
+private methods of `Stream`, that I'll call `is_empty()` and `head()`.
 
 	class Stream<T> {
 	  ...
 	  Stream<R> map(Function<T, R> f) {
-		Optional<R> o = this.findFirst();
-		if (o.empty() {
+		if (this.is_empty()) {
 		  return Stream.empty();
 		} else {
-		  return Stream.concat(Stream.of( f(o.get()) ), this.skip(1));
+		  T x = this.head();
+		  return Stream.concat(Stream.of( f(x) ), this.skip(1).map(f));
 		}
 	  }
 	  ...

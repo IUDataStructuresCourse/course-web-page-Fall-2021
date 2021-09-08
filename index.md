@@ -50,7 +50,7 @@ Aug. 30 | [Code Review & Algorithm Analysis](./lectures/Aug-30.md) | Ch. 2 |
 Sep. 1  | [Algo. Analysis cont'd](./lectures/Sep-1.md) |                |
 Sep. 3  |                       |                | Project: [Flood it!](https://iu.instructure.com/courses/1996307/assignments/12641907), [submit](https://autograder.sice.indiana.edu/web/project/322)
 Sep. 6  | Labor Day             |                |
-Sep. 8  | Linked Lists          | Ch. 3 sec. 1-5 | [Homework 1](./HW1.md)
+Sep. 8  | [Linked Lists & Streams](./Lectures/Sep-8.md) | Ch. 3 sec. 1-5 | [Homework 1](./HW1.md)
 Sep. 10 |                       |                | Lab: [Streams](https://iu.instructure.com/courses/1996307/assignments/12670249), [submit](https://autograder.sice.indiana.edu/web/project/323)
 
 **Resources**

@@ -152,9 +152,9 @@ stream and the rest of the stream, provided the stream is not empty.
 	static <T,R> Stream<R> mymap(Stream<T> s, Function<T,R> f) {
 	   Optional<Pair<T,Stream<T>>> opt = match(s);
 	   if (opt.isPresent()) {
-		  T x = opt.get().fst;
+		  T elt = opt.get().fst;
 		  Stream<T> rest = opt.get().snd;
-		  return Stream.concat(Stream.of(f.apply(x)), mymap(rest, f));
+		  return Stream.concat(Stream.of(f.apply(elt)), mymap(rest, f));
 	   } else {
 		  return Stream.empty();
 	   }

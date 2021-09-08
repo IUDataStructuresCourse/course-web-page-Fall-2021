@@ -25,11 +25,11 @@ Mondays and Wednesdays 1:10pm-2:25pm, Student Building, Room 138.
 
 Fridays 10:00am-11:55am, Ballantine Hall 118.
 
-**Instructors**
+**Instructors and Office Hours**
 
-* Jeremy Siek (jsiek), office hours: Tue 1-2pm, Wed 11am-noon, in Luddy 3014
-* Annie Pompa (apompa), office hours: Thu 5-6pm, Fri 3-4pm, in Luddy 3014
-* Sophia Zhang (zhanso)
+* Jeremy Siek (jsiek), office hours: Tue 1-2pm, Wed 11am-noon, in Luddy 3014 (or nearby).
+* Annie Pompa (apompa), office hours: Thu 5-6pm, Fri 3-4pm, in Luddy 3014.
+* Sophia Zhang (zhanso), office hours: Tue 2:30-3:30pm, Fri 2:45-3:45pm, in Luddy 3014.
 
 **Textbook**
 
@@ -47,11 +47,11 @@ Aug. 23 | [Introduction](./lectures/Aug-23.md) |   |
 Aug. 25 | [Arrays, Rotation, Correctness](./lectures/Aug-25.md) | Ch. 1 | 
 Aug. 27 |                       |                | Lab: Array [Search](https://iu.instructure.com/courses/1996307/assignments/12618347), [submit](https://autograder.sice.indiana.edu/web/project/321)
 Aug. 30 | [Code Review & Algorithm Analysis](./lectures/Aug-30.md) | Ch. 2 |
-Sep. 1  | Algo. Analysis cont'd |                |
-Sep. 3  |                       |                | Project: Flood it!
+Sep. 1  | [Algo. Analysis cont'd](./lectures/Sep-1.md) |                |
+Sep. 3  |                       |                | Project: [Flood it!](https://iu.instructure.com/courses/1996307/assignments/12641907), [submit](https://autograder.sice.indiana.edu/web/project/322)
 Sep. 6  | Labor Day             |                |
 Sep. 8  | Linked Lists          | Ch. 3 sec. 1-5 | [Homework 1](./HW1.md)
-Sep. 10 |                       |                | Lab: Merge Sort
+Sep. 10 |                       |                | Lab: [Streams](https://iu.instructure.com/courses/1996307/assignments/12670249), [submit](https://autograder.sice.indiana.edu/web/project/323)
 
 **Resources**
 

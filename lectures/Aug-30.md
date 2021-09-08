@@ -6,27 +6,25 @@
 
 ```
 public static int find_first_true(boolean[] A, int begin, int end) {
-	int position = end;
-	for (int i = begin; i < end; i++) {
-		if (A[i] == true) {
-			position = i;
-			break;
+	for (int i = begin; i != end; ++i) {
+		if (A[i]) {
+			return i;
 		}
 	}
-	return position;
+	return end;
 }
 ```
 
 ```
-package com.company;
+//package com.company;
 
 public class Search {
     public static int find_first_true(boolean[] A, int begin, int end) {
         boolean trueFound = false;
         int i = 0;
         int length = end - begin;
-        while ((!trueFound) & (i < length)) {
-            if (A[i] = true) {
+        while ((!trueFound) & (i < length)) { // & instead of &&
+            if (A[i] == true) { // double equals in Java
                 trueFound = true;
                 return i;
             } else {
@@ -69,11 +67,7 @@ Notes:
 public static int find_first_equal(int[] A, int x) {
 	boolean[] b = new boolean[A.length];
 	for (int i = 0; i < A.length; i++) {
-		if (A[i] == x) {
-		    b[i] = true;
-		} else {
-		    b[i] = false;
-		}
+	    b[i] = (A[i] == x);
 	}
 	return find_first_true(b, 0, b.length);
 }
@@ -218,7 +212,7 @@ ignoring details that don't matter.
 
 Functions to think about: n, 10n, lg n, n lg n, 10 n², n² + n
 
-## Asympotitic Upper Bound
+## Asymptotic Upper Bound
 
 **Definition** (Big-O) For a given function g, we define **O(g)** as the
 the set of functions that grow similarly or slower than g. More

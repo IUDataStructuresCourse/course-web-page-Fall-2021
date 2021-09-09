@@ -53,7 +53,7 @@ Sep. 6  | Labor Day             |                |
 Sep. 8  | [Linked Lists & Streams](./lectures/Sep-8.md) | Ch. 3 sec. 1-5 | [Homework 1](./HW1.md)
 Sep. 10 |                       |                | Lab: [Streams](https://iu.instructure.com/courses/1996307/assignments/12670249), [submit](https://autograder.sice.indiana.edu/web/project/323)
 Sep. 13 | Iterators, Stack, Queue, Set | Ch. 3 sec. 6-7 |
-Sep. 15 | Binary Trees | Ch. 4 sec. 1-2                 | Assignment: MergeSort
+Sep. 15 | Binary Trees | Ch. 4 sec. 1-2                 | Assignment: [MergeSort](https://iu.instructure.com/courses/1996307/assignments/12679749), [submit](https://autograder.sice.indiana.edu/web/project/324)
 Sep. 17 |              |                                | Lab: BinaryTree, Quiz
 Sep. 20 | Binary Search Trees | Ch. 4 sec. 3 and 7      | 
 Sep. 22 | Balanced AVL Trees | Ch. 4 sec. 4             | Assignment: AVLTree

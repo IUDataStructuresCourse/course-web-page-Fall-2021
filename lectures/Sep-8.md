@@ -144,18 +144,18 @@ We can then implement the list and array functions using the stream version.
     }
 
 Looking under the hood, `map` could be implemented as follows in terms
-of the Stream operations `skip(1)`, `concat`, and `of`, and some
-private methods of `Stream`, that I'll call `is_empty()` and `head()`.
+of the Stream operations `concat`, `of`, `empty`, and an extra function of
+my own devising called `match` that returns the first element of the
+stream and the rest of the stream, provided the stream is not empty.
 
-	class Stream<T> {
-	  ...
-	  Stream<R> map(Function<T, R> f) {
-		if (this.is_empty()) {
+
+	static <T,R> Stream<R> mymap(Stream<T> s, Function<T,R> f) {
+	   Optional<Pair<T,Stream<T>>> opt = match(s);
+	   if (opt.isPresent()) {
+		  T elt = opt.get().fst;
+		  Stream<T> rest = opt.get().snd;
+		  return Stream.concat(Stream.of(f.apply(elt)), mymap(rest, f));
+	   } else {
 		  return Stream.empty();
-		} else {
-		  T x = this.head();
-		  return Stream.concat(Stream.of( f(x) ), this.skip(1).map(f));
-		}
-	  }
-	  ...
+	   }
 	}

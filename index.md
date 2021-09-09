@@ -56,6 +56,11 @@ Sep. 13 | Iterators, Stack, Queue, Set | Ch. 3 sec. 6-7 |
 Sep. 14 |              |                                | Assignment: MergeSort
 Sep. 15 | Binary Trees | Ch. 4 sec. 1-2                 |
 Sep. 17 |              |                                | Lab: BinaryTree, Quiz
+Sep. 20 | Binary Search Trees | Ch. 4 sec. 3 and 7      | 
+Sep. 21 |              |                                | Assignment: AVLTree
+Sep. 22 | Balanced AVL Trees | Ch. 4 sec. 4             |
+Sep. 24 |              |                                | Lab: BinaryTree with Iterators
+
 
 **Resources**
 

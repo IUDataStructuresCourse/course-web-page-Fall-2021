@@ -21,7 +21,7 @@ Caveats:
 
 * You can't instantiate a generic with built-in types (e.g. `int`, `boolean`).
 * You can't use `new` on a type parameter (e.g. `new T()`).
-	* You can't call methods on things whose type is a type parameter such as `T` (e.g. `data.foo()`).
+* You can't call methods on things whose type is a type parameter such as `T` (e.g. `data.foo()`).
 
 ## Java Interfaces, a quick reminder
 

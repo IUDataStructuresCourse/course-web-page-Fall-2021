@@ -129,7 +129,9 @@ An iterator represents a position within a sequence.
 		}
 	}
 
-## Lab: MergeSort
+## Assignment: MergeSort
+
+NEXT TIME: change to in-place to match the MergeSort assignment
 
 Divide and conquer!
 

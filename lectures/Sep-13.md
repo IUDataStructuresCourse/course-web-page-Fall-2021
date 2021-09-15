@@ -2,14 +2,24 @@
 
 ## Java Generics, a quick reminder
 
-Classes and methods may have *type parameters*, written inside the symbols `<` and `>`.
+Classes and methods may have *type parameters*, written inside the
+symbols `<` and `>`.
 
 The body of a class and method may refer to the type parameters
 anywhere you would use other types (variable declarations, etc.).
 
 	class Node<T> {
+	  Node<T>(T d, Node<T> n) { data = d; next = n; }
 	  T data;
 	  Node<T> next;
+	}
+
+Parameter names don't matter, the following is equivalent.
+
+	class Node<Z> {
+	  Node<Z>(Z d, Node<Z> n) { data = d; next = n; }
+	  Z data;
+	  Node<Z> next;
 	}
 
 When using the class, choose a *type argument* for each parameter.
@@ -20,8 +30,13 @@ Here we choose `Integer` for the parameter `T`.
 Caveats: 
 
 * You can't instantiate a generic with built-in types (e.g. `int`, `boolean`).
+  The following is an error:
+
+    	Node<int> n = new Node<int>(42, null); 
+	
 * You can't use `new` on a type parameter (e.g. `new T()`).
-* You can't call methods on things whose type is a type parameter such as `T` (e.g. `data.foo()`).
+* You can't call methods on things whose type is a type parameter such
+  as `T` (e.g. `data.foo()`).
 
 ## Java Interfaces, a quick reminder
 
@@ -47,32 +62,57 @@ Example: angles, degrees, and radians.
 		Radian sum(Radian other) { ... }
 	}
 
+    class ComputationalGeometry {
+	    void f(Angle<Float> a1, Angle<Float> a2) { ... }
+		// can't do 
+		// new Angle<Float>(...)
+		//
+		// can do
+		// d1 = new Degree(...); d2 = new Degree(...);
+		// f(d1, d2);
+	}
+
+
 ## Iterator interface
 
 An iterator represents a position within a sequence.
 
 	public interface Iterator<T> {
 		// The get() method returns the element at the current position.
+		// O(1)
 		T get();
-		// The set() method writes the element e into the current position of the sequence.
+		
+		// The set() method writes the element e into the current position
+		// of the sequence.
+		// O(1)
 		void set(T e);
+		
 		// The advance() method moves the iterator to the next position.
+		// O(1)
 		void advance();
+		
 		// Advance `n` times.
+		// O(n)
 		void advance(int n);
-		// The equals() method tests whether this iterator is at the same position
-		// as the other iterator.
+		
+		// The equals() method tests whether this iterator is at the same
+		// position as the other iterator.
+		// O(1)
 		boolean equals(Iterator<T> other);
-		// The clone() method creates a new iterator at the same position as this iterator.
+		
+		// The clone() method creates a new iterator at the same position
+		// as this iterator.
+		// O(1)
 		Iterator<T> clone();
 	}
 
 ## Example: Linear Search using the Iterator interface
 
     public static <E>
-    Iterator<E> find_first_if(Iterator<E> begin, Iterator<E> end, E x, Predicate<E> p) {
+    Iterator<E> find_first_if(Iterator<E> begin, Iterator<E> end, 
+	                          Predicate<E> p) {
         Iterator<E> i = begin.clone();
-        for (; !i.equals(end) & !p.test(i.get()); i.advance()) { }
+        for (; !i.equals(end) && !p.test(i.get()); i.advance()) { }
         return i;
     }
 
@@ -98,6 +138,11 @@ An iterator represents a position within a sequence.
 	}
 
 ## Student Exercise: implement a generic `equal_ranges` function
+
+    public static <E>
+    boolean equal_ranges(Iterator<E> begin1, Iterator<E> end1, 
+	                     Iterator<E> begin2, Iterator<E> end2)
+	{ ... }
 
     public static <E>
     boolean equal_ranges(Iterator<E> begin1, Iterator<E> end1, 
@@ -191,11 +236,16 @@ Recursion tree:
 	c*n/4  c*n/4  c*n/4  c*n/4        = c*n
 	...
 
+
+   n/(2^h) = 1
+   n = 2^h
+   log(n) = h
+
 Height of the recursion tree is log(n).
 
-So the total work is c\, n\, log(n).
+So the total work is c * n * log(n).
 
-Time complexity is O(n \, log(n)).
+Time complexity is O(n * log(n)).
 
 
 ## Stack (LIFO)

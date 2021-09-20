@@ -55,7 +55,7 @@ Sep. 10 |                       |                | Lab: [Streams](https://iu.ins
 Sep. 13 | [Iterators, Merge Sort, Stack, Queue, Set](./lectures/Sep-13.md) | Ch. 3 sec. 6-7 |
 Sep. 15 | [Binary Trees](./lectures/Sep-15.md) | Ch. 4 sec. 1-2                 | Assignment: [MergeSort](https://iu.instructure.com/courses/1996307/assignments/12679749), [submit](https://autograder.sice.indiana.edu/web/project/324)
 Sep. 17 |              |                                | Lab: [BinaryTree](https://iu.instructure.com/courses/1996307/assignments/12685293) [submit](https://autograder.sice.indiana.edu/web/project/325), Quiz
-Sep. 20 | Binary Search Trees | Ch. 4 sec. 3 and 7      | 
+Sep. 20 | [Binary Search Trees](./lectures/Sep-20.md) | Ch. 4 sec. 3 and 7      | 
 Sep. 22 | Balanced AVL Trees | Ch. 4 sec. 4             | Assignment: [AVLTree](https://iu.instructure.com/courses/1996307/assignments/12693260) [submit](https://autograder.sice.indiana.edu/web/project/328)
 Sep. 24 |              |                                | Lab: [NextPrevBinaryTree](https://iu.instructure.com/courses/1996307/assignments/12699457) [submit](https://autograder.sice.indiana.edu/web/project/329)
 

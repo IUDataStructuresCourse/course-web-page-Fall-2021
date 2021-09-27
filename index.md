@@ -58,9 +58,9 @@ Sep. 17 |              |                                | Lab: [BinaryTree](http
 Sep. 20 | [Binary Search Trees](./lectures/Sep-20.md) | Ch. 4 sec. 3 and 7      | 
 Sep. 22 | [Loop Invariants, Correctness of Recursive Functions](./lectures/Sep-22.md) | Ch. 4 sec. 4             | Assignment: [AVLTree](https://iu.instructure.com/courses/1996307/assignments/12693260) [submit](https://autograder.sice.indiana.edu/web/project/328)
 Sep. 24 |              |                                | Lab: [NextPrevBinaryTree](https://iu.instructure.com/courses/1996307/assignments/12699457) [submit](https://autograder.sice.indiana.edu/web/project/329)
-Sep. 27 | Balanced AVL Trees |
+Sep. 27 | [AVL Trees](./lectures/Sep-27.md) |
 Sep. 29 | More AVL Trees |
-Oct. 1  |              |                                | Project: Segment Intersection
+Oct. 1  |              |                                | [Project: Segment Intersection](https://iu.instructure.com/courses/1996307/assignments/12720024) [submit](https://autograder.sice.indiana.edu/web/project/332)
 Oct. 4  | Hash tables  | |
 Oct. 6  | Heaps and Priority Queues | |
 Oct. 8  | **Fall Break**   | |

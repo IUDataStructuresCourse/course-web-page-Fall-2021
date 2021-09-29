@@ -61,17 +61,17 @@ Sep. 24 |              |                                | Lab: [NextPrevBinaryTr
 Sep. 27 | [AVL Trees](./lectures/Sep-27.md) |
 Sep. 29 | [BST and AVL Remove, Segment Intersection](./lectures/Sep-29.md) |
 Oct. 1  |              |                                | [Project: Segment Intersection](https://iu.instructure.com/courses/1996307/assignments/12720024) [submit](https://autograder.sice.indiana.edu/web/project/332)
-Oct. 4  | Hash tables  | |
-Oct. 6  | Heaps and Priority Queues | |
-Oct. 8  | **Fall Break**   | |
-Oct. 11 | Review for Midterm Exam | |
+Oct. 4  | Hash tables  | Ch. 5 sec. 1-3 |
+Oct. 6  | Heaps and Priority Queues | Ch. 6 sec. 1-4, 9  |
+Oct. 8  | **Fall Break**   |                             |
+Oct. 11 | Review for Midterm Exam |                      |
 Oct. 13 | **Midterm Exam** |                             | 
 Oct. 15 |                  |                             | Lab: HashTable
-Oct. 18 | Binomial Queues  |                             | 
-Oct. 20 | Quicksort        |                             | 
+Oct. 18 | Binomial Queues  | Ch. 6 sec. 8                | 
+Oct. 20 | Quicksort        | Ch. 7, sec. 1-7             | 
 Oct. 22 |                  |                             | Lab: Binomial Heap
-Oct. 25 | Sorting in Linear Time    |                    | 
-Oct. 27 | Graphs, Topological Order |                    | 
+Oct. 25 | Sorting in Linear Time    | Ch. 7, sec. 11     | 
+Oct. 27 | Graphs, Topological Order | Ch. 9, sec. 1-2    | 
 Oct. 29 |                  |                             | Lab: Quicksort
 
 

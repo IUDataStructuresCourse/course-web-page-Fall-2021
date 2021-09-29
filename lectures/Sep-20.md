@@ -14,79 +14,78 @@
 choices for c and k in the definition of big-O that are
 appropriate. (The log is base 2.)
 
-	𝑐=1,𝑘=32     yes         4*32 + 20 = 148 <= 160 = 32 * 5 = 1 * 32 log 32
-	𝑐=2,𝑘=16     yes         4*16 + 20 = 84 <= 128 = 2 * 16 * 4
-	𝑐=1,𝑘=16     no          4*16 + 20 = 84 > 64 = 1 * 16 * 4 
-	𝑐=3,𝑘=4      no          4*4 + 20 = 36 > 24 = 3 * 4 * 2
+    𝑐=1,𝑘=32     yes         4*32 + 20 = 148 <= 160 = 32 * 5 = 1 * 32 log 32
+    𝑐=2,𝑘=16     yes         4*16 + 20 = 84 <= 128 = 2 * 16 * 4
+    𝑐=1,𝑘=16     no          4*16 + 20 = 84 > 64 = 1 * 16 * 4 
+    𝑐=3,𝑘=4      no          4*4 + 20 = 36 > 24 = 3 * 4 * 2
  
 2. What is the time complexity of the following flood function in
 terms of the total number of tiles on the board?
 
-		static void flood(WaterColor color,
-								  LinkedList flooded_list,
-								  Tile[][] tiles,
-								  Integer board_size) {
-			HashSet flooded = new HashSet<>(flooded_list);     // O(n)
-			for (int i = 0; i != flooded_list.size(); ++i) {   // n iterations, O(n^2)
-				Coord c = flooded_list.get(i);                 // O(n)
-				for (Coord n : c.neighbors(board_size)) {      // 4 iterations
-					if (!flooded.contains(n)                   // O(1)
-							&& tiles[n.getY()][n.getX()].getColor() == color) {
-						flooded_list.add(n);                   // O(1)
-						flooded.add(n);                        // O(1)
-					}
-				}
-				 // total: O(n) 
-			}
-		}
-		
-	Answer: O(n^2)
+        static void flood(WaterColor color,
+                                  LinkedList flooded_list,
+                                  Tile[][] tiles,
+                                  Integer board_size) {
+            HashSet flooded = new HashSet<>(flooded_list);
+            for (int i = 0; i != flooded_list.size(); ++i) {
+                Coord c = flooded_list.get(i);
+                for (Coord n : c.neighbors(board_size)) {
+                    if (!flooded.contains(n)
+                            && tiles[n.getY()][n.getX()].getColor() == color) {
+                        flooded_list.add(n);
+                        flooded.add(n);
+                    }
+                }
+            }
+        }
+        
+    Answer: O(n^2)
 
 3. Consider the following implementation of Binary Search that uses a while loop.
 
-		static int search_loop(int A[], int key) {
-			int low = 0;
-			int high = A.length;
-			int mid = 0;
-			int result = -1;
-			while (low != high && result == -1) {
-				mid = (low + high) / 2;
-				if (A[mid] < key)
-					low = mid + 1;
-				else if (A[mid] > key)
-					high = mid;
-				else {
-					result = mid;
-				}
-			}
-			return result;
-		}
+        static int search_loop(int A[], int key) {
+            int low = 0;
+            int high = A.length;
+            int mid = 0;
+            int result = -1;
+            while (low != high && result == -1) {
+                mid = (low + high) / 2;
+                if (A[mid] < key)
+                    low = mid + 1;
+                else if (A[mid] > key)
+                    high = mid;
+                else {
+                    result = mid;
+                }
+            }
+            return result;
+        }
 
-	This Binary Search algorithm is suppose to return -1 if the key is not
-	in the array and return the index of the key if the key is in the
-	array.
+    This Binary Search algorithm is suppose to return -1 if the key is not
+    in the array and return the index of the key if the key is in the
+    array.
 
-	Which of the following is the correct loop invariant for the while loop?
+    Which of the following is the correct loop invariant for the while loop?
 
     yes:
-	
-		(result == -1
-		 && !contains(A, key, 0, low)
-		 && !contains(A, key, high, A.length))
-		|| A[result] == key
+    
+        (result == -1
+         && !contains(A, key, 0, low)
+         && !contains(A, key, high, A.length))
+        || A[result] == key
 
     no:
-	
-		result == -1 || A[result] == key
+    
+        result == -1 || A[result] == key
 
     no:
-	
-		low <= mid && mid < high
+    
+        low <= mid && mid < high
 
     no:
-	
-		!contains(A, key, 0, low)
-		 && !contains(A, key, high, A.length)
+    
+        !contains(A, key, 0, low)
+         && !contains(A, key, high, A.length)
 
 
 ## Binary Search Trees
@@ -103,12 +102,12 @@ For every node x in the tree,
 
 We can also use BSTs to implement the Map interface (aka. "dictionary").
 
-	interface Map<K,V> {
-	   V get(K key);
-	   V put(K key, V value);
-	   V remove(K key);
-	   boolean containsKey(K key);
-	}
+    interface Map<K,V> {
+       V get(K key);
+       V put(K key, V value);
+       V remove(K key);
+       boolean containsKey(K key);
+    }
 
 
 ## Binary Search Tree and Node Classes
@@ -125,7 +124,7 @@ has a `lessThan` predicate for comparing elements.
 			Node left, right, parent;
 			...
         }
-	}
+    }
 
 We define `Node` as a class nested inside `BinarySearchTree` for
 convenience.
@@ -135,40 +134,40 @@ convenience.
 
 Example: Search for 6, 9, 15 in the following tree:
 
-		  8
-		/   \
-	   /     \
-	  3       10
-	 / \        \
-	1   6       14
-	   / \     /
-	  4   7   13
+          8
+        /   \
+       /     \
+      3       10
+     / \        \
+    1   6       14
+       / \     /
+      4   7   13
 
 Find the node with the specified key, or if there is none, the parent of
 where such a node would be.
 
-	protected Node find(K key, Node curr, Node parent) {
-		if (curr == null)
-			return parent;
-		else if (lessThan(key, curr.data))
-			return find(key, curr.left, curr);
-		else if (lessThan(curr.data, key))
-			return find(key, curr.right, curr);
-		else
-			return curr;
-	}
+    protected Node find(K key, Node curr, Node parent) {
+        if (curr == null)
+            return parent;
+        else if (lessThan(key, curr.data))
+            return find(key, curr.left, curr);
+        else if (lessThan(curr.data, key))
+            return find(key, curr.right, curr);
+        else
+            return curr;
+    }
 
-	public Node search(K key) {
-		Node n = find(key, root, null);
-		if (n != null && n.data.equals(key))
-			return n;
-		else
-			return null;
-	}
+    public Node search(K key) {
+        Node n = find(key, root, null);
+        if (n != null && n.data.equals(key))
+            return n;
+        else
+            return null;
+    }
 
-	public boolean contains(K key) {
-		return search(key) != null;
-	}
+    public boolean contains(K key) {
+        return search(key) != null;
+    }
 
 What is the time complexity? answer: O(h), where h is the
 height of the tree
@@ -194,38 +193,24 @@ Return the inserted node, or null if the key is already in the tree.
 	   }
     }		
 		    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Solution:
 
-	public Node insert(K key) {
-		Node n = find(key, root, null);
-		if (n == null){
-			root = new Node(key);
-			return root;
-		} else if (lessThan(key, n.data)) {
-			Node x = new Node(key);
-			n.left = x;
-			return x;
-		}  else if (lessThan(n.data, key)) {
-			Node x = new Node(key);
-			n.right = x;
-			return x;
-		} else
-			return null;
-	}
+    public Node insert(K key) {
+        Node n = find(key, root, null);
+        if (n == null){
+            root = new Node(key);
+            return root;
+        } else if (lessThan(key, n.data)) {
+            Node x = new Node(key);
+            n.left = x;
+            return x;
+        }  else if (lessThan(n.data, key)) {
+            Node x = new Node(key);
+            n.right = x;
+            return x;
+        } else
+            return null;
+    }
 
 What is the time complexity? answer: O(h) where h is the height of the tree.
 
@@ -234,78 +219,78 @@ What is the time complexity? answer: O(h) where h is the height of the tree.
 
 * Case 1: (no left child)
 
-		  |              |
-		z=o              A
-		   \       ==>
-			A
+          |              |
+        z=o              A
+           \       ==>
+            A
 
 * Case 2: (no right child)
 
-			|            |
-		  z=o            A
-		   /       ==>
-		  A
+            |            |
+          z=o            A
+           /       ==>
+          A
 
 * Case 3: Two children
 
-			 |
-		   z=o
-			/ \
-		   A   B
+             |
+           z=o
+            / \
+           A   B
 
-	The main idea is to replace z with the node after z, which
-	is the first node y in subtree B.
+    The main idea is to replace z with the node after z, which
+    is the first node y in subtree B.
 
-	Two cases to consider:
+    Two cases to consider:
 
-	Case a) B is y
+    Case a) B is y
 
-			 |                  |
-		   z=o        ==>       y
-			/ \                / \
-		   A   y              A   C
-				\
-				 C
+             |                  |
+           z=o        ==>       y
+            / \                / \
+           A   y              A   C
+                \
+                 C
 
-	Case b) B is not y (y is properly inside B)
+    Case b) B is not y (y is properly inside B)
 
-			 |                  |
-		   z=o        ==>       y
-			/ \                / \
-		   A   B             A    B
-			  ...                ...
-			   |                  |
-			   y                  C
-				\
-				 C      
+             |                  |
+           z=o        ==>       y
+            / \                / \
+           A   B             A    B
+              ...                ...
+               |                  |
+               y                  C
+                \
+                 C      
 
-	What is the time complexity? answer: O(h) where h is the height
+    What is the time complexity? answer: O(h) where h is the height
 
 Solution for `remove`:
 
-	public void remove(T key) {
-	   root = remove_helper(root, key);
-	}
+    public void remove(T key) {
+       root = remove_helper(root, key);
+    }
 
-	private Node remove_helper(Node n, int key) {
-		if (n == null) {
-			return null;
-		} else if (lessThan(key, n.data)) { // remove in left subtree
-			n.left = remove_helper(n.left, key);
-			return n;
-		} else if (lessThan(n.data, key)) { // remove in right subtree
-			n.right = remove_helper(n.right, key);
-			return n;
-		} else { // remove this node
-			if (n.left == null) {
-				return n.right;
-			} else if (n.right == null) {
-				return n.left;
-			} else { // two children, replace with first of right subtree
-				Node min = n.right.first();
-				n.data = min.data;
-				n.right = n.right.delete_first(); // another helper function
-				return n;
-			}
-		}
-	}
+    private Node remove_helper(Node n, int key) {
+        if (n == null) {
+            return null;
+        } else if (lessThan(key, n.data)) { // remove in left subtree
+            n.left = remove_helper(n.left, key);
+            return n;
+        } else if (lessThan(n.data, key)) { // remove in right subtree
+            n.right = remove_helper(n.right, key);
+            return n;
+        } else { // remove this node
+            if (n.left == null) {
+                return n.right;
+            } else if (n.right == null) {
+                return n.left;
+            } else { // two children, replace with first of right subtree
+                Node min = n.right.first();
+                n.data = min.data;
+                n.right = n.right.delete_first(); // another helper function
+                return n;
+            }
+        }
+    }

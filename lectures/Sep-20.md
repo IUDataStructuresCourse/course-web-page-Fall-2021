@@ -26,16 +26,17 @@ terms of the total number of tiles on the board?
 								  LinkedList flooded_list,
 								  Tile[][] tiles,
 								  Integer board_size) {
-			HashSet flooded = new HashSet<>(flooded_list);
-			for (int i = 0; i != flooded_list.size(); ++i) {
-				Coord c = flooded_list.get(i);
-				for (Coord n : c.neighbors(board_size)) {
-					if (!flooded.contains(n)
+			HashSet flooded = new HashSet<>(flooded_list);     // O(n)
+			for (int i = 0; i != flooded_list.size(); ++i) {   // n iterations, O(n^2)
+				Coord c = flooded_list.get(i);                 // O(n)
+				for (Coord n : c.neighbors(board_size)) {      // 4 iterations
+					if (!flooded.contains(n)                   // O(1)
 							&& tiles[n.getY()][n.getX()].getColor() == color) {
-						flooded_list.add(n);
-						flooded.add(n);
+						flooded_list.add(n);                   // O(1)
+						flooded.add(n);                        // O(1)
 					}
 				}
+				 // total: O(n) 
 			}
 		}
 		
@@ -120,7 +121,7 @@ has a `lessThan` predicate for comparing elements.
 		BiPredicate<K, K> lessThan;
 		...
 		class Node {
-			T data;
+			K data;
 			Node left, right, parent;
 			...
         }
@@ -177,6 +178,32 @@ height of the tree
 `insert` into a binary search tree using the `find` method.
 
 Return the inserted node, or null if the key is already in the tree.
+
+	public Node insert(K key) {
+        Node n = find(key, root, null);
+		if (n != null)
+		    return null;
+		else {
+		  if (lessThan(key, n.data)) {
+		     n.left = new Node(key, null, null);
+	      } else if (lessThan(n.data, key)) {
+		     n.right = new Node(key, null, null);
+		  } else { // equal
+		     
+		  }
+	   }
+    }		
+		    
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -96,10 +96,10 @@ public class MergeSort {
     public static <E extends Comparable<? super E>>
     void sort(Iterator<E> begin, Iterator<E> end) {
 
-        ArrayList<E> a = make_array(distance(begin, end));
-        Iterator<E> ai = new ArrayListIterator<E>(a, 0);
-
         if(distance(begin,end) > 1) {
+
+	    ArrayList<E> a = make_array(distance(begin, end));
+	    Iterator<E> ai = new ArrayListIterator<E>(a, 0);
 
             int split = distance(begin, end) / 2;
 

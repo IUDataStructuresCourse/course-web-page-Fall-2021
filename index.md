@@ -65,9 +65,14 @@ Oct. 4  | Hash tables  | |
 Oct. 6  | Heaps and Priority Queues | |
 Oct. 8  | **Fall Break**   | |
 Oct. 11 | Review for Midterm Exam | |
-Oct. 13 | **Midterm Exam** | |
-Oct. 15 |              |                                | Lab: HashTable
-
+Oct. 13 | **Midterm Exam** |                             | 
+Oct. 15 |                  |                             | Lab: HashTable
+Oct. 18 | Binomial Queues  |                             | 
+Oct. 20 | Quicksort        |                             | 
+Oct. 22 |                  |                             | Lab: Binomial Heap
+Oct. 25 | Sorting in Linear Time    |                    | 
+Oct. 27 | Graphs, Topological Order |                    | 
+Oct. 29 |                  |                             | Lab: Quicksort
 
 
 **Resources**

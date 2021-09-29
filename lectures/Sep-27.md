@@ -36,40 +36,40 @@ insertion and removal because it is more rigidly balanced.
 
 2. Fix the AVL property if needed.
 
-	We may need to fix problems along the entire path
-	from the point of insertion on up to the root.
+    We may need to fix problems along the entire path
+    from the point of insertion on up to the root.
 
 Example insertion and rebalancing:
 
-				 41
-			   /    \
-			 20      \
-		   /    \     65
-		  11     29  /
-				/   50
-			  26
+                 41
+               /    \
+             20      \
+           /    \     65
+          11     29  /
+                /   50
+              26
 
-		  insert(23) ==>
+          insert(23) ==>
 
-				 41
-			   /    \
-			 20      \
-		   /    \     65
-		  11     29  /
-				/   50
-			  26
-			 /
-		   23
+                 41
+               /    \
+             20      \
+           /    \     65
+          11     29  /
+                /   50
+              26
+             /
+           23
 
 Node 29 breaks the AVL invariant.
 
 ### Tree Rotation
 
-					y                         x
-				   / \    right_rotate(y)    / \
-				  x   C  --------------->   A   y
-				 / \     <-------------        / \
-				A   B     left_rotate(x)      B   C
+                    y                         x
+                   / \    right_rotate(y)    / \
+                  x   C  --------------->   A   y
+                 / \     <-------------        / \
+                A   B     left_rotate(x)      B   C
 
 This preserves the BST property and the in-order ordering.
 
@@ -77,11 +77,11 @@ A x B y C  =  A x B y C
 
 Insert example: let's use rotation to fix up our insert(23) example:
 
-					   29
-					  /    right_rotate(29)
-					26     ---------------->    26
-				   /                           /  \
-				 23                          23    29
+                       29
+                      /    right_rotate(29)
+                    26     ---------------->    26
+                   /                           /  \
+                 23                          23    29
 
 However, in different situations, the way in which we use tree
 rotation is different. So let's look at more situations.
@@ -96,7 +96,7 @@ rotation is different. So let's look at more situations.
                      /
                    26
 
-	So 65 breaks the AVL invariant, and we have a zig-zag:
+    So 65 breaks the AVL invariant, and we have a zig-zag:
 
                    65
                   /
@@ -104,7 +104,7 @@ rotation is different. So let's look at more situations.
                   \
                    55
 
-	A right rotation at 65 gives us a zag-zig, we're not making progress!
+    A right rotation at 65 gives us a zag-zig, we're not making progress!
 
                   65(y)                        50(x)
                  /        right_rotate(65)       \
@@ -112,7 +112,7 @@ rotation is different. So let's look at more situations.
                   \                              /
                    55(B)                       55(B)
 
-	Instead, let's try a left rotate at 50:
+    Instead, let's try a left rotate at 50:
 
                   65                           65
                  /        left_rotate(50)     /
@@ -120,7 +120,7 @@ rotation is different. So let's look at more situations.
                   \                         /
                    55(y)                 50(x)
 
-	This looks familiar, now we can rotate right. 
+    This looks familiar, now we can rotate right. 
 
                       65(y)                        55(x)
                      /      right_rotate(65)       /  \

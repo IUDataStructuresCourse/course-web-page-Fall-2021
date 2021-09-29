@@ -58,24 +58,23 @@ public class MergeSort {
                       Iterator<E> result) {
         Iterator<E> b1 = begin1.clone();
         Iterator<E> b2 = begin2.clone();
-        while ((distance(b1,end1)>=1) && (distance(b2,end2)>=1)){
+        while (! b1.equals(end1) && ! b2.equals(end2)) {
             if (b1.get().compareTo(b2.get())<=0){
                 result.set(b1.get());
                 b1.advance();
-                result.advance();
             }
             else{
                 result.set(b2.get());
                 b2.advance();
-                result.advance();
             }
+	    result.advance();
         }
-        while (distance(b1,end1)>=1){
+        while (! b1.equals(end1)){
             result.set(b1.get());
             b1.advance();
             result.advance();
         }
-        while (distance(b2,end2)>=1){
+        while (! b2.equals(end2)){
             result.set(b2.get());
             b2.advance();
             result.advance();
@@ -91,19 +90,19 @@ public class MergeSort {
      */
     public static <E extends Comparable<? super E>>
     void sort(Iterator<E> begin, Iterator<E> end) {
-
-        if (distance(begin,end)>1) {
+	length = distance(begin,end);
+        if (length > 1) {
             Iterator<E> middle = begin.clone();
-            middle.advance(distance(begin, end) / 2);
+            middle.advance(length / 2);
 
             sort(begin, middle);
             sort(middle, end);
 
-            ArrayList<E> tmp = make_array(distance(begin, end));
+            ArrayList<E> tmp = make_array(length);
             ArrayListIterator i = new ArrayListIterator(tmp,0);
             Iterator<E> i_start = i.clone();
-            merge(begin,middle,middle,end,i);
-            copy(i_start,i,begin);
+            Iterator<E> i_end = merge(begin,middle,middle,end,i);
+            copy(i_start,i_end,begin);
         }
     }
 }

@@ -115,14 +115,14 @@ We can also use BSTs to implement the Map interface (aka. "dictionary").
 `BinarySearchTree` is like `BinaryTree` (has a `root`) but also
 has a `lessThan` predicate for comparing elements.
 
-    class BinarySearchTree<K> {
-        Node root;
-        BiPredicate<K, K> lessThan;
-        ...
-        class Node {
-            T data;
-            Node left, right, parent;
-            ...
+	class BinarySearchTree<K> {
+		Node root;
+		BiPredicate<K, K> lessThan;
+		...
+		class Node {
+			K data;
+			Node left, right, parent;
+			...
         }
     }
 
@@ -178,9 +178,21 @@ height of the tree
 
 Return the inserted node, or null if the key is already in the tree.
 
-
-
-
+	public Node insert(K key) {
+        Node n = find(key, root, null);
+		if (n != null)
+		    return null;
+		else {
+		  if (lessThan(key, n.data)) {
+		     n.left = new Node(key, null, null);
+	      } else if (lessThan(n.data, key)) {
+		     n.right = new Node(key, null, null);
+		  } else { // equal
+		     
+		  }
+	   }
+    }		
+		    
 Solution:
 
     public Node insert(K key) {

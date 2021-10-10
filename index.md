@@ -62,7 +62,7 @@ Sep. 27 | [AVL Trees](./lectures/Sep-27.md) |
 Sep. 29 | [BST and AVL Remove, Segment Intersection](./lectures/Sep-29.md) |
 Oct. 1  |              |                                | [Project: Segment Intersection](https://iu.instructure.com/courses/1996307/assignments/12720024) [submit](https://autograder.sice.indiana.edu/web/project/332)
 Oct. 4  | [Hash tables](./lectures/Oct-4.md)  | Ch. 5 sec. 1-3 |
-Oct. 6  | Heaps and Priority Queues | Ch. 6 sec. 1-4, 9  |
+Oct. 6  | [Heaps and Priority Queues](./lectures/Oct-6.md) | Ch. 6 sec. 1-4, 9  |
 Oct. 8  | **Fall Break**   |                             |
 Oct. 11 | Review for Midterm Exam |                      |
 Oct. 13 | **Midterm Exam** |                             | 

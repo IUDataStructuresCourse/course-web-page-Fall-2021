@@ -37,9 +37,14 @@ calling the function.
         }
     }
 
-Precondition: 0 <= begin <= end <= A.length
-Postcondition: (result == -1 && (begin == end))
-               ||
-               (result >= 0 && (begin < end)
-               && result is the maximum element in [begin,end) of A)
+Precondition: 
+
+    0 <= begin <= end <= A.length
+	
+Postcondition:
+
+    (result == -1  &&  begin == end)
+    ||
+    (result >= 0  &&  begin < end
+     && result is the maximum element in [begin,end) of A)
 

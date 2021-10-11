@@ -165,7 +165,7 @@ insert
 
 remove
 
-##AVL Trees, balancing and rotations
+## AVL Trees, balancing and rotations
 
 AVL Property: children differ in height by at most 1.
 

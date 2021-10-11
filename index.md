@@ -64,7 +64,7 @@ Oct. 1  |              |                                | [Project: Segment Inte
 Oct. 4  | [Hash tables](./lectures/Oct-4.md)  | Ch. 5 sec. 1-3 |
 Oct. 6  | [Heaps and Priority Queues](./lectures/Oct-6.md) | Ch. 6 sec. 1-4, 9  |
 Oct. 8  | **Fall Break**   |                             |
-Oct. 11 | Review for Midterm Exam |                      |
+Oct. 11 | [Review for Midterm Exam](./lectures/Oct-11.md) |                      |
 Oct. 13 | **Midterm Exam** |                             | 
 Oct. 15 |                  |                             | Lab: HashTable
 Oct. 18 | Binomial Queues  | Ch. 6 sec. 8                | 

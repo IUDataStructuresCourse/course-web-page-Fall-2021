@@ -66,7 +66,7 @@ Oct. 6  | [Heaps and Priority Queues](./lectures/Oct-6.md) | Ch. 6 sec. 1-4, 9  
 Oct. 8  | **Fall Break**   |                             |
 Oct. 11 | [Review for Midterm Exam](./lectures/Oct-11.md) |                      |
 Oct. 13 | **Midterm Exam** |                             | 
-Oct. 15 |                  |                             | Lab: HashTable
+Oct. 15 |                  |                             | Lab: [HashTable](https://iu.instructure.com/courses/1996307/assignments/12745883) [submit](https://autograder.sice.indiana.edu/web/project/334)
 Oct. 18 | Binomial Queues  | Ch. 6 sec. 8                | 
 Oct. 20 | Quicksort        | Ch. 7, sec. 1-7             | 
 Oct. 22 |                  |                             | Lab: Binomial Heap

@@ -3,13 +3,13 @@
 Topics
 
 * Projects
-        - Flood It: time complexity, Java collection classes
-        - Segment Intersection: BST and AVL
+    * Flood It: time complexity, Java collection classes
+    * Segment Intersection: BST and AVL
 * Arrays, array algorithms e.g. search, rotate, Java's ArrayList
 * Linked lists, doubly linked lists, Java's LinkedList
 * Abstract data types
-        - interfaces
-        - iterators
+    * interfaces
+    * iterators
 * Time complexity
 * Binary Search Trees
 * AVL Trees (balanced BSTs)
@@ -123,20 +123,20 @@ To clarify:
 
 traversals: 
 
-        * pre-order: current, left, right
-        * in-order: left, current, right
-        * post-order; left, right, current
+* pre-order: current, left, right
+* in-order: left, current, right
+* post-order; left, right, current
 
-first
+first method
 
-last
+last method
 
-next:
+next method
 
-  if right child, return right's first
-  else find ancestor that comes next wrt. inorder
+    if right child, return right's first
+    else find ancestor that comes next wrt. inorder
 
-previous (mirror of next)
+previous method (mirror of next)
 
 
 ## Binary Search Trees

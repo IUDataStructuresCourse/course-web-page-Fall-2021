@@ -69,10 +69,16 @@ Oct. 13 | **Midterm Exam** |                             |
 Oct. 15 |                  |                             | Lab: [HashTable](https://iu.instructure.com/courses/1996307/assignments/12745883) [submit](https://autograder.sice.indiana.edu/web/project/334)
 Oct. 18 | Binomial Queues  | Ch. 6 sec. 8                | 
 Oct. 20 | Quicksort        | Ch. 7, sec. 1-7             | 
-Oct. 22 |                  |                             | Lab: Binomial Heap
+Oct. 22 |                  |                             | Lab: BinomialHeap
 Oct. 25 | Sorting in Linear Time    | Ch. 7, sec. 11     | 
 Oct. 27 | Graphs, Topological Order | Ch. 9, sec. 1-2    | 
-Oct. 29 |                  |                             | Lab: Quicksort
+Oct. 29 |                  |                             | Lab: QuickSort
+Nov. 5  |                  |                             | Lab: ConnectedComponents
+Nov. 12 |                  |                             | Project: RoutingWires
+Nov. 19 |                  |                             | Lab: HuffmanCoding
+Nov. 22-26 | **Thanksgiving Break**
+Dec. 3  |                  |                             | Lab: SeamCarving
+Dec. 10 |                  |                             | Project: DNA Alignment
 
 
 **Resources**

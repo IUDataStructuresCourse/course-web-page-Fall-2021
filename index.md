@@ -73,13 +73,23 @@ Oct. 22 |                  |                             | Lab: BinomialHeap
 Oct. 25 | Sorting in Linear Time    | Ch. 7, sec. 11     | 
 Oct. 27 | Graphs, Topological Order | Ch. 9, sec. 1-2    | 
 Oct. 29 |                  |                             | Lab: QuickSort
+Nov. 1  | Breadth-first search | Ch. 9, sec. 3           | 
+Nov. 3  | Shortest Paths | Ch. 8                         | 
 Nov. 5  |                  |                             | Lab: ConnectedComponents
+Nov. 8  | Union-Find       | Ch. 9, sec. 5
+Nov. 10 | Minimum Spanning Trees | Ch. 10, sec. 1
 Nov. 12 |                  |                             | Project: RoutingWires
+Nov. 15 | Greedy Algorithms | Ch. 10, sec. 2
+Nov. 17 | Dynamic Programming | Ch. 10, sec. 3
 Nov. 19 |                  |                             | Lab: HuffmanCoding
 Nov. 22-26 | **Thanksgiving Break**
+Nov. 29 | DNA Alignment    | 
+Dec. 1  | Backtracking     | Ch. 10, sec. 5
 Dec. 3  |                  |                             | Lab: SeamCarving
+Dec. 6  | TBD              |
+Dec. 8  | Review for Final Exam | 
 Dec. 10 |                  |                             | Project: DNA Alignment
-
+Dec. 17 | **Final Exam** | 12:35-2:35 PM in class
 
 **Resources**
 

@@ -62,15 +62,15 @@ Sep. 27 | [AVL Trees](./lectures/Sep-27.md) |
 Sep. 29 | [BST and AVL Remove, Segment Intersection](./lectures/Sep-29.md) |
 Oct. 1  |              |                                | [Project: Segment Intersection](https://iu.instructure.com/courses/1996307/assignments/12720024) [submit](https://autograder.sice.indiana.edu/web/project/332)
 Oct. 4  | [Hash tables](./lectures/Oct-4.md)  | Ch. 5 sec. 1-3 |
-Oct. 6  | [Heaps and Priority Queues](./lectures/Oct-6.md) | Ch. 6 sec. 1-4, 9  |
+Oct. 6  | [Debugging and Testing](./lectures/Oct-6.md) |   |
 Oct. 8  | **Fall Break**   |                             |
 Oct. 11 | [Review for Midterm Exam](./lectures/Oct-11.md) |                      |
 Oct. 13 | **Midterm Exam** |                             | 
 Oct. 15 |                  |                             | Lab: [HashTable](https://iu.instructure.com/courses/1996307/assignments/12745883) [submit](https://autograder.sice.indiana.edu/web/project/334)
-Oct. 18 | Binomial Queues  | Ch. 6 sec. 8                | 
-Oct. 20 | Quicksort        | Ch. 7, sec. 1-7             | 
+Oct. 18 | [Heaps and Priority Queues](./lectures/Oct-19.md)  | Ch. 6 sec. 1-4, 9    | 
+Oct. 20 | [Binomial Queues](./lectures/Oct-20.md)        |  Ch. 6 sec. 8        | 
 Oct. 22 |                  |                             | Lab: BinomialHeap
-Oct. 25 | Sorting in Linear Time    | Ch. 7, sec. 11     | 
+Oct. 25 | Quicksort, Sorting in Linear Time    | Ch. 7, sec. 1-7, 11     | 
 Oct. 27 | Graphs, Topological Order | Ch. 9, sec. 1-2    | 
 Oct. 29 |                  |                             | Lab: QuickSort
 Nov. 1  | Breadth-first search | Ch. 9, sec. 3           | 

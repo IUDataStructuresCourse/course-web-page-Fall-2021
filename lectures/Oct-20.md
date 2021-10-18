@@ -1,4 +1,8 @@
-# Lecture: Binomial Heaps
+# Lecture: Binomial Queues
+
+Overview:
+1. Binomial Trees and Heaps
+2. Binomial Forests and Queues
 
 ## Binomial Trees
 
@@ -105,7 +109,7 @@ Def. A **binomial heap** Bn is a binomial tree where each node has a
 key and they satisfy the max-heap property.
 
 
-## Binomial Forests
+## Binomial Forests and Queues
 
 Def. A **binomial forest** is a collection of binomial trees.
 

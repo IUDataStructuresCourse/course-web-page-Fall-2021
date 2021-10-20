@@ -4,7 +4,7 @@ Overview:
 1. Binomial Trees and Heaps
 2. Binomial Forests and Queues
 
-## Binomial Trees
+## Binomial Trees and Heaps
 
 Recall the binomial coefficient, n choose k, written 
 
@@ -21,7 +21,15 @@ size 3. For {a,b,c} we have {a,b}, {a,c}, {b,c}.  In general, we have:
 
     ( 3 )  = 3! / ( 2!(3 - 2)! ) = 6 / 2 = 3
     ( 2 )
-    
+
+The name "binomial" comes from the Binomial Theorem, which describes
+the expansion of powers of a binomial:
+
+    (x + y)^n = Sum from k=0 to n of (n choose k) * x^(n-k) * y^k
+
+For example,
+
+    (x + y)^4 = x^4 + 4x^3y + 6x^2y^2 + 4xy^3 + y^4
 
 Recall Pascal's Triangle
     
@@ -108,33 +116,62 @@ nodes at each depth?  Solution:
 Def. A **binomial heap** Bn is a binomial tree where each node has a
 key and they satisfy the max-heap property.
 
+	class BinomialHeap<K> {
+		K key;
+		int height;
+		PList<BinomialHeap<K>> children;
+		BiPredicate<K, K> lessEq;
+		...
+	}	
+
+The `PList` class is for **persistent lists**. 
+
+In general, a data structure is called **persistent** if it can
+provide efficient access to older versions of the data structure.
+
+The `PList` class represents lists in a way that you can add an
+element to the list but still access the old list, prior to the
+addition. The following is an exerpt from the `PList` class.
+
+	class PList<T> {
+		T data;
+		PList<T> next;
+		PList(T d, PList<T> nxt) { data = d; next = nxt; }
+
+		public static <T> PList<T> addFront(T first, PList<T> rest);
+		public static <T> T getFirst(PList<T> n);
+		public static <T> PList<T> getNext(PList<T> n);
+		...
+	}	
+
+The `addFront` method returns a new `PList` with the given `first`
+element and whose subsequent elements are the same as the `rest`.
+
+The `getFirst` method returns the first element of the list.
+
+The `getNext` method returns the list as it was before the first
+element was added.
+
+Note that the `addFront` and `getNext` methods do not mutate (make
+changes) to any `PList` objects.
+
+The `PList` class includes several more methods that come in handy.
+
 
 ## Binomial Forests and Queues
 
 Def. A **binomial forest** is a collection of binomial trees.
 
-	class BinomialHeap<K extends Comparable<K>> {
-		K key;
-		int height;
-		ListNode<BinomialHeap<K>> children;
-		BiPredicate<K,K> lessEq;
-		...
-	}
-
-	class ListNode<T> {
-		T data;
-		ListNode<T> next;
-		...
-	}
-
 We can implement a priority queue with a forest of binomial heaps.
 It's a forest to allow for numbers of nodes that are not powers
-of 2. We'll store the forest in order of *increasing* height and we
-will not allow two trees of the same height.  The forest is
-represented as a cons-list (nested pairs ending in None).
+of 2. 
+
+We'll store the forest in order of *increasing* height and we will not
+allow two trees of the same height.  The forest is represented as a
+persistent list.
 
 	public class BinomialQueue<K> {
-		ListNode<BinomialHeap<K>> forest;
+		PList<BinomialHeap<K>> forest;
 		BiPredicate<K,K> lessEq;
 		...
 	}
@@ -148,12 +185,12 @@ If two binomial trees have the same height, linking them is easy.
 Just make one of the trees the first child of the other.  Pick the one
 with the larger key to be on top to maintain the max heap property.
 
-	Bk  U  Bk =  B{k+1}
-	B2  U  B2 =  B3
+	Bk  ∪  Bk =  B{k+1}
+	B2  ∪  B2 =  B3
 
 	o       o      o______
 	|\      |\     |   \  \
-	o o  U  o o =  o    o  o
+	o o  ∪  o o =  o    o  o
 	|       |      |\   |
 	o       o      o o  o
 				   |
@@ -162,10 +199,10 @@ with the larger key to be on top to maintain the max heap property.
 	// @precondition this.height == other.height
 	BinomialHeap<K> link(BinomialHeap<K> other) {
 		if (lessEq.test(other.key, this.key)) {
-			ListNode<BinomialHeap<K>> kids = new ListNode<>(other, this.children);
+			PList<BinomialHeap<K>> kids = new PList<>(other, this.children);
 			return new BinomialHeap<>(this.key, this.height + 1, kids);
 		} else {
-			ListNode<BinomialHeap<K>> kids = new ListNode<>(this, other.children);
+			PList<BinomialHeap<K>> kids = new PList<>(this, other.children);
 			return new BinomialHeap<>(other.key, other.height + 1, kids);
 		}
 	}
@@ -194,7 +231,7 @@ into forest
 First we link the two B1's:
 
 	o   o   o
-	| U | = |\
+	| ∪ | = |\
 	o   o   o o
 			|
 			o
@@ -205,32 +242,37 @@ with the other B2 to get B3 (see above), so we get the forest:
 	B0 B3
 
 
-You will implement the insert method in lab.
+You will implement the `insert` method in lab.
 
-	static <K extends Comparable<K>> ListNode<BinomialHeap<K>>
-	insert(BinomialHeap<K> n, ListNode<BinomialHeap<K>> ns);
+	static <K extends Comparable<K>> PList<BinomialHeap<K>>
+	insert(BinomialHeap<K> n, PList<BinomialHeap<K>> ns);
+
+### push
 
 In the `BinomialQueue`, we use `insert` to implement `push` as follows.
 
 	public void push(K key) {
-		this.forest = insert(new BinomialHeap<>(key,0,null), this.forest, lessEq);
+        BinomialHeap<K> heap = new BinomialHeap<>(key, 0, null, lessEq);
+        this.forest = insert(heap, this.forest);
 	}
 
 ### Merge Operation
 
 The merge function takes two binomial forests, ordered by increasing
 height, and turns them into a single forest.  This algorithm is
-analogous to the merge of merge sort.  Examples:
+analogous to the merge of merge sort.  
+
+Examples:
 
 	merge [B0 B2] with [B1 B4] = [B0,B1,B2,B4],
 	merge [B0 B1] with [B1 B4] = [B0 B2 B4].
 
 You will implement `merge` in lab.
 
-	ListNode<BinomialHeap<K>>
-	merge(ListNode<BinomialHeap<K>> ns1, ListNode<BinomialHeap<K>> ns2);
+	PList<BinomialHeap<K>>
+	merge(PList<BinomialHeap<K>> ns1, PList<BinomialHeap<K>> ns2);
 
-### extract_max
+### pop
 
 1. In the forest, find the tree with the largest key
 2. Remove that tree, but merge all of its children into the forest.
@@ -239,13 +281,11 @@ You will implement `merge` in lab.
 
 Here's the code:
 
-	public K extract_max() {
-		BinomialHeap<K> max = find_max(this.forest);
-		this.forest = remove(max, this.forest);
-		ListNode<BinomialHeap<K>> kids = reverse(max.children, null);
+	public K pop() {
+		BinomialHeap<K> max = PList.find_max(this.forest);
+		this.forest = PList.remove(max, this.forest);
+		PList<BinomialHeap<K>> kids = PList.reverse(max.children, null);
 		this.forest = merge(this.forest, kids);
 		return max.key;
 	}
 
-**Student exercise**: implement `find_max`.  It takes a forest and
-returns the smallest of all the roots.

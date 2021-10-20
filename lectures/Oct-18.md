@@ -76,7 +76,7 @@ operation moves the element at position i into the correct position.
 The tree rooted at i is not a max heap, but the subtrees
 left(i) and right(i) are max heaps.
 
-Example: 4 is greater than one of its children so we swap it with
+Example: 4 is less than one of its children so we swap it with
 the larger child and repeat.
 
              ___16___

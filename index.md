@@ -28,8 +28,8 @@ Fridays 10:00am-11:55am, Ballantine Hall 118.
 **Instructors and Office Hours**
 
 * Jeremy Siek (jsiek), office hours: Tue 1-2pm, Wed 11am-noon, in Luddy 3014 (or nearby).
-* Annie Pompa (apompa), office hours: Thu 5-6pm in Luddy 3014, Fri 3-4pm [online](https://gather.town/invite?token=3e5VRImAWR27eAhGxJlCMgdNXTLKw_Mthttps://gather.town/invite?token=3e5VRImAWR27eAhGxJlCMgdNXTLKw_Mt).
-* Sophia Zhang (zhanso), office hours: Tue 2:30-3:30pm, Fri 2:45-3:45pm, both [online](https://gather.town/invite?token=3e5VRImAWR27eAhGxJlCMgdNXTLKw_Mthttps://gather.town/invite?token=3e5VRImAWR27eAhGxJlCMgdNXTLKw_Mt).
+* Annie Pompa (apompa), office hours: Thu 5-6pm in Luddy 3014, Fri 3-4pm [online](https://gather.town/invite?token=gxaT3ByRkTqv0ISxMPq60ALr-wt-dhBN).
+* Sophia Zhang (zhanso), office hours: Tue 2:30-3:30pm, Fri 2:45-3:45pm, both [online](https://gather.town/invite?token=gxaT3ByRkTqv0ISxMPq60ALr-wt-dhBN).
 
 **Textbook**
 

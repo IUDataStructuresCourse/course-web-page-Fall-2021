@@ -70,7 +70,7 @@ Oct. 15 |                  |                             | Lab: [HashTable](http
 Oct. 18 | [Heaps and Priority Queues](./lectures/Oct-18.md)  | Ch. 6 sec. 1-4, 9    | 
 Oct. 20 | [Binomial Queues](./lectures/Oct-20.md)        |  Ch. 6 sec. 8        | 
 Oct. 22 |                  |                             | Lab: [BinomialHeap](https://iu.instructure.com/courses/1996307/assignments/12789263) [submit](https://autograder.sice.indiana.edu/web/project/339)
-Oct. 25 | Quicksort, Sorting in Linear Time    | Ch. 7, sec. 1-7, 11     | 
+Oct. 25 | [Quicksort, Sorting in Linear Time](./lectures/Oct-25.md)    | Ch. 7, sec. 1-7, 11     | 
 Oct. 27 | Graphs, Topological Order | Ch. 9, sec. 1-2    | 
 Oct. 29 |                  |                             | Lab: QuickSort
 Nov. 1  | Breadth-first search | Ch. 9, sec. 3           | 

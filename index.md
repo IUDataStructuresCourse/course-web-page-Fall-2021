@@ -70,21 +70,21 @@ Oct. 15 |                  |                             | Lab: [HashTable](http
 Oct. 18 | [Heaps and Priority Queues](./lectures/Oct-18.md)  | Ch. 6 sec. 1-4, 9    | 
 Oct. 20 | [Binomial Queues](./lectures/Oct-20.md)        |  Ch. 6 sec. 8        | 
 Oct. 22 |                  |                             | Lab: [BinomialHeap](https://iu.instructure.com/courses/1996307/assignments/12789263) [submit](https://autograder.sice.indiana.edu/web/project/339)
-Oct. 25 | [Quicksort, Sorting in Linear Time](./lectures/Oct-25.md)    | Ch. 7, sec. 1-7, 11     | 
-Oct. 27 | Graphs, Topological Order | Ch. 9, sec. 1-2    | 
+Oct. 25 | [Quicksort](./lectures/Oct-25.md)    | Ch. 7, sec. 1-7     | 
+Oct. 27 | [Sorting in Linear Time](./lectures/Oct-27.md) | Ch. 7 sec. 11  | 
 Oct. 29 |                  |                             | Lab: [QuickSort](https://iu.instructure.com/courses/1996307/assignments/12799759) [submit](https://autograder.sice.indiana.edu/web/project/337)
-Nov. 1  | Breadth-first search | Ch. 9, sec. 3           | 
-Nov. 3  | Shortest Paths | Ch. 8                         | 
+Nov. 1  | Graphs, Topological Order | Ch. 9, sec. 1-2            | 
+Nov. 3  | Breadth-first search | Ch. 9, sec. 3                            | 
 Nov. 5  |                  |                             | Lab: ConnectedComponents
-Nov. 8  | Union-Find       | Ch. 9, sec. 5
-Nov. 10 | Minimum Spanning Trees | Ch. 10, sec. 1
+Nov. 8  | Shortest Paths   |
+Nov. 10 | Union-Find       | Ch. 8
 Nov. 12 |                  |                             | Project: RoutingWires
-Nov. 15 | Greedy Algorithms | Ch. 10, sec. 2
-Nov. 17 | Dynamic Programming | Ch. 10, sec. 3
+Nov. 15 | Minimum Spanning Trees | Ch. 9, sec. 5   
+Nov. 17 | Greedy Algorithms | Ch. 10, sec. 1,  Ch. 10, sec. 2
 Nov. 19 |                  |                             | Lab: HuffmanCoding
 Nov. 22-26 | **Thanksgiving Break**
-Nov. 29 | DNA Alignment    | 
-Dec. 1  | Backtracking     | Ch. 10, sec. 5
+Nov. 29 | Dynamic Programming    | Ch. 10, sec. 3
+Dec. 1  | DNA Alignment     | 
 Dec. 3  |                  |                             | Lab: SeamCarving
 Dec. 6  | TBD              |
 Dec. 8  | Review for Final Exam | 

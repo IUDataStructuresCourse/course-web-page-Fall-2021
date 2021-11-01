@@ -151,7 +151,7 @@ Here are many (all?) of the topological orderings:
 	c,e, a,b, d, f
 	c,e, b,a, d, f
 
-### Knuth's algorithm for topological sort
+### Knuth's version of Kahn's algorithm for topological sort
 
 	static <V> void topo_sort(Graph<V> G, 
 							  Consumer<V> output,

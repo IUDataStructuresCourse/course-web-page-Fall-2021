@@ -73,7 +73,7 @@ Oct. 22 |                  |                             | Lab: [BinomialHeap](h
 Oct. 25 | [Quicksort](./lectures/Oct-25.md)    | Ch. 7, sec. 1-7     | 
 Oct. 27 | [Sorting in Linear Time](./lectures/Oct-27.md) | Ch. 7 sec. 11  | 
 Oct. 29 |                  |                             | Lab: [QuickSort](https://iu.instructure.com/courses/1996307/assignments/12799759) [submit](https://autograder.sice.indiana.edu/web/project/337)
-Nov. 1  | Graphs, Topological Order | Ch. 9, sec. 1-2            | 
+Nov. 1  | [Graphs, Topological Order](./lectures/Nov-1.md) | Ch. 9, sec. 1-2            | 
 Nov. 3  | Breadth-first search | Ch. 9, sec. 3                            | 
 Nov. 5  |                  |                             | [Lab: ConnectedComponents](https://iu.instructure.com/courses/1996307/assignments/12814884) [submit](https://autograder.sice.indiana.edu/web/project/345)
 Nov. 8  | Shortest Paths   |

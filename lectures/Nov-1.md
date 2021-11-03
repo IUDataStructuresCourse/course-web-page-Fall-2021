@@ -14,10 +14,13 @@ edges.
 
 ![**Example of a directed graph.**](./digraph1.png)
 
-The set of vertices for this graph is {0,1,2,3,4,5}.
+The set of vertices for this graph is 
+
+    {0,1,2,3,4,5}.
 
 The set of edges is 
-{(0,0), (1,2),(1,4),  (2,5),  (3,5),(3,0),  (4,2),  (5,4),  }.
+
+    {(0,0), (1,2),(1,4),  (2,5),  (3,5),(3,0),  (4,2),  (5,4),  }.
 
 Given edge (u,v) in a directed graph, we say v is *adjacent* to u.
 We sometimes write u to v for the edge (u,v).
@@ -30,16 +33,16 @@ The *in-degree* of a vertex is the number of its in-edges.
 
 ![**Example of an undirected graph.**](./graph1.png)
 
-The set of vertices is {0,1,2,3,4}.
+The set of vertices is `{0,1,2,3,4}`.
 
-The set of edges is {{1,2},{1,0},  {2,3},{2,4},{2,0},  {3,4},  {4,0}}.
+The set of edges is `{{1,2},{1,0},  {2,3},{2,4},{2,0},  {3,4},  {4,0}}`.
 
-We often writes an undirected edge as (1,2) or 1-2 instead of {1,2}.
+We often writes an undirected edge as `(1,2)` or `1-2` instead of `{1,2}`.
 
-Given edge {u,v} in an undirected graph, we say u and v are
+Given edge `{u,v}` in an undirected graph, we say u and v are
 *adjacent* to each other. 
 
-We say that edge {u,v} is *incident on* vertex u and v.
+We say that edge `{u,v}` is *incident on* vertex u and v.
 
 The *degree* of a vertex is the number of edges incident on it.
 
@@ -134,8 +137,8 @@ Makefile example for building software
 - In what order should they be compiled?
 - How many steps are required to compile everything in parallel?
 
-Recall that a topological ordering is an ordering of the vertices v_i
-such that if v_i to v_j, then i < j.
+Recall that a topological ordering is an ordering `A` of the vertices
+such that if `A[i] -> A[j]`, then `i < j`.
 
 In other words, a vertex needs to come before every other vertex
 that depends on it.

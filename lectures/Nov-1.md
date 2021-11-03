@@ -35,7 +35,7 @@ The *in-degree* of a vertex is the number of its in-edges.
 
 The set of vertices is `{0,1,2,3,4}`.
 
-The set of edges is `{{1,2},{1,0},  {2,3},{2,4},{2,0},  {3,4},  {4,0}}`.
+The set of edges is `{ {1,2},{1,0},  {2,3},{2,4},{2,0},  {3,4},  {4,0} }`.
 
 We often writes an undirected edge as `(1,2)` or `1-2` instead of `{1,2}`.
 

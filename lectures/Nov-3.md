@@ -234,6 +234,8 @@ can be categorized as follows:
 
 Do the DFS example again but with the white/gray/black colors.
 
+## Discover and Finish Times
+
 We can discover yet more structure of the graph if we record
 timestamps on a vertex when it is discovered (turned from white to
 gray) and when it is finished (turned from gray to black).

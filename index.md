@@ -78,7 +78,7 @@ Nov. 3  | [Breadth and Depth-first search](./lectures/Nov-3.md) | Ch. 9, sec. 3 
 Nov. 5  |                  |                             | [Lab: ConnectedComponents](https://iu.instructure.com/courses/1996307/assignments/12814884) [submit](https://autograder.sice.indiana.edu/web/project/345)
 Nov. 8  | Shortest Paths   |
 Nov. 10 | Union-Find       | Ch. 8
-Nov. 12 |                  |                             | Project: RoutingWires
+Nov. 12 |                  |                             | [Project: RoutingWires](https://iu.instructure.com/courses/1996307/assignments/12836596) [submit](https://autograder.sice.indiana.edu/web/project/348)
 Nov. 15 | Minimum Spanning Trees | Ch. 9, sec. 5   
 Nov. 17 | Greedy Algorithms | Ch. 10, sec. 1,  Ch. 10, sec. 2
 Nov. 19 |                  |                             | Lab: HuffmanCoding

@@ -76,7 +76,7 @@ Oct. 29 |                  |                             | Lab: [QuickSort](http
 Nov. 1  | [Graphs, Topological Order](./lectures/Nov-1.md) | Ch. 9, sec. 1-2            | 
 Nov. 3  | [Breadth and Depth-first search](./lectures/Nov-3.md) | Ch. 9, sec. 3                            | 
 Nov. 5  |                  |                             | [Lab: ConnectedComponents](https://iu.instructure.com/courses/1996307/assignments/12814884) [submit](https://autograder.sice.indiana.edu/web/project/345)
-Nov. 8  | Shortest Paths   |
+Nov. 8  | [Shortest Paths](./lectures/Nov-8.md)   |
 Nov. 10 | Union-Find       | Ch. 8
 Nov. 12 |                  |                             | [Project: RoutingWires](https://iu.instructure.com/courses/1996307/assignments/12836596) [submit](https://autograder.sice.indiana.edu/web/project/348)
 Nov. 15 | Minimum Spanning Trees | Ch. 9, sec. 5   

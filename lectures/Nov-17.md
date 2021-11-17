@@ -79,7 +79,7 @@ start and end time.
         ------------------------          2,14  10
                             --------      12,16 11    *
 
-### Brute force algorithm
+### Brute force recursive algorithm
 
 Try all valid combinations:
     
@@ -106,14 +106,14 @@ A, then we are done.  On the other hand, suppose the activity x is
 not in A.  Let x' be the first activity to finish amongst those in
 A.  We can replace x' with x to get a new solution. That is, let
 A' = (A - {x'}) ∪ {x}. The set A' is also an optimal solution
-because a does not conflict with any of the other activities: its
+because x does not conflict with any of the other activities: its
 finish time is less than that of x', and therefore, less than the
 start time of any other activity in A.  Also, the size of A' is
 the same as A.
 
 ### Implementation of Activity Selection
 
-```java "Activity class"
+```
 class Activity {
    Activity(int s, int f) { start = s; finish = f; }
    int start;
@@ -128,7 +128,7 @@ k is the last activity that was selected.
 n is the total number of activities.
 
 
-```java "activity selection"
+```
 static LinkedList<Integer>
 activity_selector(Activity[] activity, int k, int n) {
    LinkedList<Integer> A;

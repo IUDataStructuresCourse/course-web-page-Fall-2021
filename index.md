@@ -80,7 +80,7 @@ Nov. 8  | [Shortest Paths](./lectures/Nov-8.md)   |
 Nov. 10 | [Union-Find](./lectures/Nov-10.md)       | Ch. 8
 Nov. 12 |                  |                             | [Project: RoutingWires](https://iu.instructure.com/courses/1996307/assignments/12836596) [submit](https://autograder.sice.indiana.edu/web/project/348)
 Nov. 15 | Minimum Spanning Trees, **NO CLASS**, [video](https://iu.mediaspace.kaltura.com/media/t/1_xv370i7x) instead | Ch. 9, sec. 5
-Nov. 17 | Greedy Algorithms | Ch. 10, sec. 1,  Ch. 10, sec. 2
+Nov. 17 | [Greedy Algorithms](./lectures/Nov-17.md) | Ch. 10, sec. 1,  Ch. 10, sec. 2
 Nov. 19 |                  |                             | [Lab: HuffmanCoding](https://iu.instructure.com/courses/1996307/assignments/12850544) [submit](https://autograder.sice.indiana.edu/web/project/351)
 Nov. 22-26 | **Thanksgiving Break**
 Nov. 29 | Dynamic Programming    | Ch. 10, sec. 3

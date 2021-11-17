@@ -149,7 +149,7 @@ activity_selector(Activity[] activity, int k, int n) {
 Recurrence Formula
 
     T(n) = T(n-1) + O(n)
-	
+    
 Time complexity:
 
     O(n^2)
@@ -170,11 +170,11 @@ and want to store it using less space
 
 Idea: use shorter binary codes for higher-frequency words.
 
-	  CTCT: 4 occurrences
-	  CATC: 3
-	  AGCC: 2
-	  AGCT: 1
-	  TGAA: 1
+      CTCT: 4 occurrences
+      CATC: 3
+      AGCC: 2
+      AGCT: 1
+      TGAA: 1
 
 Also, to avoid needing a separator, use a *prefix code*. That is, make
 sure that no code is a prefix of another code.
@@ -195,34 +195,34 @@ A message uses letters A-H with the following number of occurences.
   A=000, B=001, C=010, D=011, etc.
 
                   _/\_
-			    _/    \_
-			  0/        \1
-			  /          \
-			 /\          /\
-		   0/  \1      0/  \1
-		   /    \      /    \
-		 0/\1  0/\1  0/\1  0/\1
-		 A  B  C  D  E  F  G  H
-		 
+                _/    \_
+              0/        \1
+              /          \
+             /\          /\
+           0/  \1      0/  \1
+           /    \      /    \
+         0/\1  0/\1  0/\1  0/\1
+         A  B  C  D  E  F  G  H
+         
     24 total characters in the message to be encoded.
-	
+    
     Total length is 72.
 
 * Variable length encoding:
     A=0(1), B=11000(5), C=11001(5), D=1101(4), 
     E=10(2), F=1110(4), G=11110(5), H=11111(5).
 
-		   0/\1
-		   /  \
-		  A  0/\1
-			 /  \
-			E  0/\1
-			  _/  \_
-			 /      \
-		   0/\1    / \1
-		   /  D  0/ 0/\1
-		 0/\1    F  /  \
-		 B  C      G    H
+           0/\1
+           /  \
+          A  0/\1
+             /  \
+            E  0/\1
+              _/  \_
+             /      \
+           0/\1    / \1
+           /  D  0/ 0/\1
+         0/\1    F  /  \
+         B  C      G    H
 
    Code-length multiplied times number of occurences yields the
    following for each letter:
@@ -255,36 +255,36 @@ where the priority is the frequency of the word.
 2. Pop two trees from the queue, create a subtree whose frequency
    is the sum of the two:
 
-		2
-		|- B[1]
-		|- C[1]
+        2
+        |- B[1]
+        |- C[1]
 
 3. Push the new subtree into the queue.
 4. Go back to 2. as long as there is more than one item in the queue. 
 
-		24
-		|-A[10]
-		|-14
-		  |-E[6]
-		  |-8
-			|-4
-			| |-2
-			| | |- B[1]
-			| | |- C[1]
-			| |-D[2]
-			|-4
-			  |-F[2]
-			  |-2
-				|- G[1]
-				|_ H[1]
+        24
+        |-A[10]
+        |-14
+          |-E[6]
+          |-8
+            |-4
+            | |-2
+            | | |- B[1]
+            | | |- C[1]
+            | |-D[2]
+            |-4
+              |-F[2]
+              |-2
+                |- G[1]
+                |_ H[1]
 
 ### How to encode a string using a Huffman code:
 
 * Build a dictionary mapping each word to its code.
 
-	recursively walk through the tree, keeping track
-	of the current path, and add to the dictionary
-	when you get to a leaf.
+    recursively walk through the tree, keeping track
+    of the current path, and add to the dictionary
+    when you get to a leaf.
 
 * Iterate through the string and translate each word
   by using the dictionary.
@@ -294,26 +294,26 @@ where the priority is the frequency of the word.
 Create the Huffman code (tree) for the following alphabet with
 frequencies.
 
-	   a  b  c  d  e f
-	   ---------------
-	   45 13 12 16 9 5
+       a  b  c  d  e f
+       ---------------
+       45 13 12 16 9 5
 
 a solution:
 
-				   0/\1
-				   /  \  
-				  55   a(45)
-				0/  \1
-				|     \
-				30      25
-			  0/  \1  0/  \1
-			 14    d  b    c
-		   0/  \1
-		   f    e
+                   0/\1
+                   /  \  
+                  55     a(45)
+                0/  \1
+                |     \
+                30      25
+              0/  \1  0/  \1
+             14    d  b    c
+           0/  \1
+           f    e
 
 Decode the following message, encoded using the above Huffman tree.
 
-	 000010110001
+     000010110001
 
 solution:
     

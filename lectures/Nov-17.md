@@ -121,12 +121,13 @@ class Activity {
 }
 ```
 
-The activities are already sorted by finish time.
+The following function `activity_selector` implments the
+greedy algorithm for wedding planning.
 
-activity array maps activity numbers to activity objects
-k is the last activity that was selected.
-n is the total number of activities.
-
+* The `activity` array maps activity numbers to activity objects.
+  The activities are already sorted by finish time.
+* k is the last activity that was selected.
+* n is the total number of activities.
 
 ```
 static LinkedList<Integer>

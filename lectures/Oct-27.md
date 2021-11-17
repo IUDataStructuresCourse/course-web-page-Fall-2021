@@ -119,7 +119,7 @@ where does 3 go? 3-1=2
 **Student pre-lecture assignment**: implement counting_sort in Java.
     My solution:
 
-    ```java
+    ```
     static void counting_sort(int[] A, int[] B, int k) {
        int[] C = new int[k+1]; // counts of each element of A
        int[] L = new int[k+1];  // L[j] = number of elements less or equal j.

@@ -112,7 +112,7 @@ distance to a vertex.
 We *relax an edge* by updating the distance of the target vertex if
 this edge provides a shorter path to it.
 
-```java "Relax"
+```
 static void relax(Edge e, double[] distance, int[] parent,
                   Map<Edge,Double> weight) {
     if (distance[e.target] > distance[e.source] + weight.get(e)) {

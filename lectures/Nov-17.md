@@ -149,7 +149,12 @@ activity_selector(Activity[] activity, int k, int n) {
 Recurrence Formula
 
     T(n) = T(n-1) + O(n)
-    
+	
+    T(n) = T(n-1) + O(n)
+         = (T(n-2) + O(n-1)) + O(n)
+		 ...
+		 = O(1) + O(2) + ... O(n-1) + O(n) = n^2/2   in O(n^2)
+	 
 Time complexity:
 
     O(n^2)

@@ -83,7 +83,7 @@ Nov. 15 | Minimum Spanning Trees, **NO CLASS**, [video](https://iu.mediaspace.ka
 Nov. 17 | [Greedy Algorithms](./lectures/Nov-17.md) | Ch. 10, sec. 1,  Ch. 10, sec. 2 | [video](https://iu.mediaspace.kaltura.com/media/t/1_ouypcxs5)
 Nov. 19 |                  |                             | [Lab: HuffmanCoding](https://iu.instructure.com/courses/1996307/assignments/12850544) [submit](https://autograder.sice.indiana.edu/web/project/351)
 Nov. 22-26 | **Thanksgiving Break**
-Nov. 29 | Dynamic Programming    | Ch. 10, sec. 3
+Nov. 29 | [Dynamic Programming](./lectures/Nov-29.md)    | Ch. 10, sec. 3
 Dec. 1  | DNA Alignment     | 
 Dec. 3  |                  |                             | [Lab: SeamCarving](https://iu.instructure.com/courses/1996307/assignments/12880242) [submit](https://autograder.sice.indiana.edu/web/project/352)
 Dec. 6  | TBD              |

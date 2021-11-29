@@ -85,7 +85,7 @@ Nov. 19 |                  |                             | [Lab: HuffmanCoding](
 Nov. 22-26 | **Thanksgiving Break**
 Nov. 29 | Dynamic Programming    | Ch. 10, sec. 3
 Dec. 1  | DNA Alignment     | 
-Dec. 3  |                  |                             | Lab: SeamCarving
+Dec. 3  |                  |                             | [Lab: SeamCarving](https://iu.instructure.com/courses/1996307/assignments/12880242) [submit](https://autograder.sice.indiana.edu/web/project/352)
 Dec. 6  | TBD              |
 Dec. 8  | Review for Final Exam | 
 Dec. 10 |                  |                             | Project: DNA Alignment

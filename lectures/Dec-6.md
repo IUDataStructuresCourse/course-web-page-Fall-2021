@@ -5,7 +5,7 @@ pruning. It is applicable anytime a solution to the problem can be
 broken into partial solutions, and there is a way to prune partial
 solutions that can't be extended to a full solution.
 
-Example: Sudoku (world's hardest by the mathematicisn Arto Inkala)
+Example: Sudoku (world's hardest by the mathematician Arto Inkala)
 
     800 000 000
     003 600 000

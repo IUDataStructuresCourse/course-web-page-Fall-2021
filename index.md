@@ -87,7 +87,7 @@ Nov. 29 | [Dynamic Programming](./lectures/Nov-29.md)    | Ch. 10, sec. 3
 Dec. 1  | [DNA Alignment](./lecture/Dec-1.md)            | 
 Dec. 3  |                  |                             | [Lab: SeamCarving](https://iu.instructure.com/courses/1996307/assignments/12880242) [submit](https://autograder.sice.indiana.edu/web/project/352)
 Dec. 6  | [Backtracking](./lecture/Dec-6.md)                                   |
-Dec. 8  | Review for Final Exam | 
+Dec. 8  | [Review for Final Exam](./lecture/Dec-8.md) | 
 Dec. 10 |                  |                             | Project: DNA Alignment
 Dec. 17 | **Final Exam** | 12:35-2:35 PM in class
 
